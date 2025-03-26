@@ -66,9 +66,9 @@ const Navbar: React.FC = () => {
         <div className="flex items-center space-x-8">
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-crypto-blue rounded-xl flex items-center justify-center">
-              <span className="text-white font-bold text-xl">CM</span>
+              <span className="text-white font-bold text-xl">CC</span>
             </div>
-            <span className="font-semibold text-xl hidden sm:inline-block">CryptoMarket</span>
+            <span className="font-semibold text-xl hidden sm:inline-block">CoinCruncher</span>
           </Link>
           
           <nav className="hidden md:flex items-center space-x-6">

@@ -15,16 +15,16 @@ const About: React.FC = () => {
         <div className="container mx-auto px-4 py-12">
           {/* Hero Section */}
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h1 className="text-4xl font-bold mb-4">About CryptoMarket</h1>
+            <h1 className="text-4xl font-bold mb-4">About CoinCruncher</h1>
             <p className="text-xl text-muted-foreground mb-8">
-              The premier platform connecting cryptocurrency projects with top-tier marketing services.
+              Your ultimate cryptocurrency analytics and marketing connection platform.
             </p>
             <div className="flex justify-center gap-4">
               <Button asChild>
                 <Link to="/dashboard">Explore Market</Link>
               </Button>
               <Button variant="outline" asChild>
-                <Link to="/contact">Contact Us</Link>
+                <a href="https://coincruncher.com/contact" target="_blank" rel="noopener noreferrer">Contact Us</a>
               </Button>
             </div>
           </div>
@@ -33,9 +33,10 @@ const About: React.FC = () => {
           <div className="glass-morphism p-8 rounded-xl mb-16">
             <h2 className="text-2xl font-semibold mb-4 text-center">Our Mission</h2>
             <p className="text-lg text-center max-w-2xl mx-auto">
-              At CryptoMarket, we're dedicated to bridging the gap between innovative blockchain projects 
-              and marketing professionals. Our platform provides real-time cryptocurrency market data while 
-              facilitating connections that help projects grow and succeed in a competitive landscape.
+              At CoinCruncher, we're dedicated to providing powerful cryptocurrency analytics while 
+              connecting innovative blockchain projects with marketing professionals. Our platform 
+              delivers real-time market data and facilitates connections that help projects grow in 
+              a competitive landscape.
             </p>
           </div>
           
@@ -95,7 +96,7 @@ const About: React.FC = () => {
                 <h3 className="text-xl font-medium mb-1">John Doe</h3>
                 <p className="text-sm text-muted-foreground mb-3">Founder & CEO</p>
                 <p className="text-sm">
-                  With 8+ years in blockchain technology, John leads our vision to transform crypto marketing.
+                  With 8+ years in blockchain technology, John leads our vision to transform crypto analytics.
                 </p>
               </div>
               
@@ -132,14 +133,14 @@ const About: React.FC = () => {
             <h2 className="text-2xl font-semibold mb-4">Join Our Community</h2>
             <p className="text-lg mb-6 max-w-2xl mx-auto">
               Whether you're a cryptocurrency project seeking marketing expertise or a marketing professional 
-              looking to offer your services, CryptoMarket is your platform for growth and success.
+              looking to offer your services, CoinCruncher is your platform for growth and success.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button asChild size="lg">
                 <Link to="/auth?mode=register">Create an Account</Link>
               </Button>
               <Button variant="outline" asChild size="lg">
-                <Link to="/contact">Contact Our Team</Link>
+                <a href="https://coincruncher.com/contact" target="_blank" rel="noopener noreferrer">Contact Our Team</a>
               </Button>
             </div>
           </div>
