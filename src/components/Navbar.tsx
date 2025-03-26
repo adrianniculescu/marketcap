@@ -35,6 +35,7 @@ const Navbar: React.FC = () => {
   const navItems: NavItem[] = [
     { name: 'Home', path: '/' },
     { name: 'Market', path: '/dashboard' },
+    { name: 'About', path: '/about' },
     { name: 'Portfolio', path: '/portfolio', authRequired: true },
     { name: 'Alerts', path: '/alerts', authRequired: true },
   ];
