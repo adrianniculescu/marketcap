@@ -1,5 +1,6 @@
 
 import { useToast } from "@/hooks/use-toast";
+import { toast } from "sonner";
 
 interface Coin {
   id: string;
@@ -135,11 +136,69 @@ export async function subscribeToAlerts(email: string, preferences: string[]): P
   try {
     // Mock API call
     console.log('Subscribing', email, 'to alerts with preferences:', preferences);
+    
+    // Show example alert
+    if (preferences.includes('price_alerts')) {
+      setTimeout(() => {
+        toast("Price Alert", {
+          description: "Bitcoin (BTC) has increased by 5% in the last hour",
+          icon: "🚀",
+        });
+      }, 2000);
+    }
+    
+    if (preferences.includes('market_news')) {
+      setTimeout(() => {
+        toast("Market News", {
+          description: "New regulations announced for crypto exchanges",
+          icon: "📰",
+        });
+      }, 3500);
+    }
+    
+    if (preferences.includes('marketing_opportunities')) {
+      setTimeout(() => {
+        toast("Marketing Opportunity", {
+          description: "New project 'TokenX' is looking for marketing services",
+          icon: "💼",
+        });
+      }, 5000);
+    }
+    
     return true;
   } catch (error) {
     console.error('Error subscribing to alerts:', error);
     return false;
   }
+}
+
+// Mock function to trigger a specific alert type for demo purposes
+export function triggerAlert(type: string, message: string): void {
+  let icon = "ℹ️";
+  
+  switch (type) {
+    case 'price_alerts':
+      icon = "📈";
+      break;
+    case 'new_listings':
+      icon = "🆕";
+      break;
+    case 'market_news':
+      icon = "📰";
+      break;
+    case 'marketing_opportunities':
+      icon = "💼";
+      break;
+    case 'portfolio_updates':
+      icon = "📊";
+      break;
+  }
+  
+  toast(type.split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '), {
+    description: message,
+    icon,
+    duration: 5000,
+  });
 }
 
 // Marketing contact submission
@@ -156,6 +215,15 @@ export async function submitMarketingContact(contact: MarketingContact): Promise
   try {
     // Mock API call
     console.log('Submitting marketing contact:', contact);
+    
+    // Show confirmation alert
+    setTimeout(() => {
+      toast("Marketing Contact Submitted", {
+        description: "Your information has been submitted to our project partners",
+        icon: "✅",
+      });
+    }, 1500);
+    
     return true;
   } catch (error) {
     console.error('Error submitting marketing contact:', error);
