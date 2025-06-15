@@ -54,14 +54,14 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <a href="https://coincruncher.com/careers" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/careers" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Careers
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://coincruncher.com/contact" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -70,19 +70,19 @@ const Footer: React.FC = () => {
             <h4 className="font-medium text-base mb-4">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <a href="https://coincruncher.com/terms" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/terms" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Terms of Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://coincruncher.com/privacy" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/privacy" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://coincruncher.com/disclaimer" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link to="/disclaimer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Disclaimer
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -117,3 +117,4 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
+
