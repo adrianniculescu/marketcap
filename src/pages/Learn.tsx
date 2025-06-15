@@ -1,0 +1,55 @@
+
+import React from 'react';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { BookOpen } from 'lucide-react';
+
+const Learn: React.FC = () => {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      
+      <main className="flex-1 pt-24">
+        <div className="container mx-auto px-4 py-12">
+          {/* Hero Section */}
+          <div className="max-w-3xl mx-auto text-center mb-16">
+            <h1 className="text-4xl font-bold mb-4">Crypto Knowledge Base</h1>
+            <p className="text-xl text-muted-foreground">
+              Your one-stop resource for learning everything about cryptocurrency, from basic concepts to advanced trading strategies.
+            </p>
+          </div>
+
+          {/* Search and Filters */}
+          <div className="flex flex-col md:flex-row gap-4 mb-12 max-w-4xl mx-auto">
+            <Input placeholder="Search articles..." className="flex-grow" />
+            <Button>Search</Button>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Example Article Cards - this would be populated dynamically in a real app */}
+            {Array.from({ length: 9 }).map((_, index) => (
+              <div key={index} className="bg-card rounded-xl overflow-hidden border border-border/50 transition-all hover:shadow-lg">
+                <div className="w-full h-48 bg-muted flex items-center justify-center">
+                  <BookOpen className="w-12 h-12 text-muted-foreground" />
+                </div>
+                <div className="p-6">
+                  <p className="text-sm text-primary mb-2">CATEGORY</p>
+                  <h3 className="text-xl font-semibold mb-3">Article Title {index + 1}</h3>
+                  <p className="text-muted-foreground text-sm">
+                    A brief description of the article content would go here, giving the user a glimpse of what to expect.
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </main>
+      
+      <Footer />
+    </div>
+  );
+};
+
+export default Learn;

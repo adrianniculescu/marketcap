@@ -18,6 +18,7 @@ import Contact from "./pages/Contact";
 import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import Disclaimer from "./pages/Disclaimer";
+import Learn from "./pages/Learn";
 import Alerts from "./pages/Alerts";
 import Portfolio from "./pages/Portfolio";
 
@@ -42,6 +43,7 @@ const App = () => (
               <Route path="/terms" element={<Terms />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/disclaimer" element={<Disclaimer />} />
+              <Route path="/learn" element={<Learn />} />
               <Route path="/alerts" element={<Alerts />} />
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="*" element={<NotFound />} />
@@ -54,4 +56,3 @@ const App = () => (
 );
 
 export default App;
-

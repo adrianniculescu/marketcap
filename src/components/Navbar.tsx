@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '@/context/AuthContext';
@@ -35,6 +36,7 @@ const Navbar: React.FC = () => {
     { name: 'Home', path: '/' },
     { name: 'Market', path: '/dashboard' },
     { name: 'About', path: '/about' },
+    { name: 'Learn', path: '/learn' },
     { name: 'Portfolio', path: '/portfolio', authRequired: true },
     { name: 'Alerts', path: '/alerts', authRequired: true },
   ];

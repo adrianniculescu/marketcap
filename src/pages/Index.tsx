@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -226,6 +225,79 @@ const Index: React.FC = () => {
                 Protect your data with our secure authentication system. Your information is always safe and private.
               </p>
             </motion.div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Learn Crypto section */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold mb-4">Learn About Crypto</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Expand your knowledge with our beginner-friendly guides and tutorials on cryptocurrency and blockchain.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <motion.div 
+              className="bg-card rounded-xl overflow-hidden border border-border/50 transition-all hover:shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <img src="https://images.unsplash.com/photo-1642155521924-5e58832a76f7?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="What is Bitcoin?" className="w-full h-48 object-cover" />
+              <div className="p-6">
+                <p className="text-sm text-primary mb-2">BEGINNER'S GUIDE</p>
+                <h3 className="text-xl font-semibold mb-3">What is Bitcoin?</h3>
+                <p className="text-muted-foreground text-sm">
+                  Learn about the first-ever cryptocurrency, how it works, and why it's so important in the world of finance.
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div 
+              className="bg-card rounded-xl overflow-hidden border border-border/50 transition-all hover:shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
+              <img src="https://images.unsplash.com/photo-1640525163989-5310b8d546f2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Understanding Ethereum" className="w-full h-48 object-cover" />
+              <div className="p-6">
+                <p className="text-sm text-primary mb-2">BLOCKCHAIN 101</p>
+                <h3 className="text-xl font-semibold mb-3">Understanding Ethereum</h3>
+                <p className="text-muted-foreground text-sm">
+                  Dive into Ethereum, smart contracts, and the world of decentralized applications (dApps).
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div 
+              className="bg-card rounded-xl overflow-hidden border border-border/50 transition-all hover:shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <img src="https://images.unsplash.com/photo-1631603090989-93f9ef6920e2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="What is DeFi?" className="w-full h-48 object-cover" />
+              <div className="p-6">
+                <p className="text-sm text-primary mb-2">DECENTRALIZED FINANCE</p>
+                <h3 className="text-xl font-semibold mb-3">What is DeFi?</h3>
+                <p className="text-muted-foreground text-sm">
+                  Explore the fast-growing world of Decentralized Finance and how it's changing the financial landscape.
+                </p>
+              </div>
+            </motion.div>
+          </div>
+          
+          <div className="mt-12 text-center">
+            <Button variant="outline" size="lg" asChild>
+              <Link to="/learn">
+                Explore More Guides
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
