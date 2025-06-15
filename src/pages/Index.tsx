@@ -54,7 +54,7 @@ const Index: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                Discover Crypto Market Insights & Marketing Opportunities
+                Your Gateway to the Crypto Universe
               </motion.h1>
               
               <motion.p 
@@ -63,7 +63,7 @@ const Index: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
               >
-                Track real-time cryptocurrency prices, connect with projects seeking marketing services, and receive alerts directly to your inbox.
+                Track real-time prices, analyze market trends, and manage your portfolio with ease. The ultimate tool for crypto enthusiasts.
               </motion.p>
               
               <motion.div 
@@ -173,7 +173,7 @@ const Index: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Powerful Features</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Everything you need to stay informed about the crypto market and connect with marketing opportunities.
+              Everything you need to stay on top of the crypto market and make informed decisions.
             </p>
           </div>
           
@@ -204,9 +204,9 @@ const Index: React.FC = () => {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
                 <Bell className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Marketing Alerts</h3>
+              <h3 className="text-xl font-semibold mb-3">Customizable Alerts</h3>
               <p className="text-muted-foreground">
-                Receive timely notifications about projects seeking marketing services, delivered directly to your email inbox.
+                Set custom price alerts for any cryptocurrency and receive instant notifications so you never miss an opportunity.
               </p>
             </motion.div>
             
@@ -220,9 +220,9 @@ const Index: React.FC = () => {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
                 <Shield className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-xl font-semibold mb-3">Secure Authentication</h3>
+              <h3 className="text-xl font-semibold mb-3">Secure Portfolio</h3>
               <p className="text-muted-foreground">
-                Protect your data with our secure authentication system. Your information is always safe and private.
+                Track your assets securely and privately. Your data is encrypted and you are in full control of your information.
               </p>
             </motion.div>
           </div>
@@ -306,9 +306,9 @@ const Index: React.FC = () => {
       <section className="py-20 bg-gradient-to-br from-primary/5 to-purple-500/5">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready to Take Your Crypto Marketing to the Next Level?</h2>
+            <h2 className="text-3xl font-bold mb-6">Ready to Master the Crypto Market?</h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Join thousands of marketers who receive our curated opportunities from crypto projects needing your expertise.
+              Join thousands of users who get our weekly market analysis, news, and updates right in their inbox.
             </p>
             
             <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
@@ -326,7 +326,7 @@ const Index: React.FC = () => {
             </form>
             
             <p className="text-sm text-muted-foreground mt-4">
-              By subscribing, you agree to receive marketing emails from us. You can unsubscribe at any time.
+              By subscribing, you agree to receive our newsletter. You can unsubscribe at any time.
             </p>
           </div>
         </div>
@@ -338,7 +338,7 @@ const Index: React.FC = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">What Our Users Say</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Hear from marketers and project owners who have found success with our platform.
+              Hear from investors and traders who have found success with our platform.
             </p>
           </div>
           
@@ -356,11 +356,11 @@ const Index: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold">John Doe</h4>
-                  <p className="text-sm text-muted-foreground">Marketing Consultant</p>
+                  <p className="text-sm text-muted-foreground">Day Trader</p>
                 </div>
               </div>
               <p className="text-muted-foreground">
-                "This platform has connected me with serious crypto projects that need marketing help. The email alerts are timely and relevant to my expertise."
+                "The real-time data and customizable alerts are a game-changer for my trading strategy. I can't imagine my workflow without CoinCruncher."
               </p>
             </motion.div>
             
@@ -377,11 +377,11 @@ const Index: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold">Alice Smith</h4>
-                  <p className="text-sm text-muted-foreground">Project Owner</p>
+                  <p className="text-sm text-muted-foreground">Portfolio Manager</p>
                 </div>
               </div>
               <p className="text-muted-foreground">
-                "Finding qualified marketers was always a challenge until I discovered this platform. Now I can quickly connect with professionals who understand crypto."
+                "I manage multiple portfolios, and this platform gives me a perfect overview of all my assets. It's powerful yet incredibly easy to use."
               </p>
             </motion.div>
             
