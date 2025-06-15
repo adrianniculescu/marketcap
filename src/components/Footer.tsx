@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -8,11 +7,8 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <Link to="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-crypto-blue rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-xl">CC</span>
-              </div>
-              <span className="font-semibold text-xl">CoinCruncher</span>
+            <Link to="/" className="flex items-center">
+              <img src="/lovable-uploads/8249fda5-44eb-4ad0-a142-a6cfbd792e31.png" alt="CoinCruncher Logo" className="h-10 w-auto" />
             </Link>
             <p className="text-sm text-muted-foreground">
               The ultimate platform for crypto market data, insights, and marketing connections.
@@ -117,4 +113,3 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
-

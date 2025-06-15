@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '@/context/AuthContext';
@@ -64,11 +63,8 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center space-x-8">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-crypto-blue rounded-xl flex items-center justify-center">
-              <span className="text-white font-bold text-xl">CC</span>
-            </div>
-            <span className="font-semibold text-xl hidden sm:inline-block">CoinCruncher</span>
+          <Link to="/" className="flex items-center">
+            <img src="/lovable-uploads/8249fda5-44eb-4ad0-a142-a6cfbd792e31.png" alt="CoinCruncher Logo" className="h-10 w-auto" />
           </Link>
           
           <nav className="hidden md:flex items-center space-x-6">
