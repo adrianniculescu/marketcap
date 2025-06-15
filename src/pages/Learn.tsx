@@ -36,9 +36,10 @@ const Learn: React.FC = () => {
                 <div className="p-6 flex flex-col flex-grow">
                   <p className="text-sm text-primary font-semibold mb-2">{article.category.toUpperCase()}</p>
                   <h3 className="text-xl font-semibold mb-3">{article.title}</h3>
-                  <p className="text-muted-foreground text-sm mb-4 flex-grow">
-                    {article.description.substring(0, 120)}...
-                  </p>
+                  <p
+                    className="text-muted-foreground text-sm mb-4 flex-grow line-clamp-4"
+                    dangerouslySetInnerHTML={{ __html: article.description }}
+                  ></p>
                   <Button variant="link" className="p-0 h-auto self-start">Read more &rarr;</Button>
                 </div>
               </div>
