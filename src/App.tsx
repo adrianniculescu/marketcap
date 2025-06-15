@@ -19,6 +19,7 @@ import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import Disclaimer from "./pages/Disclaimer";
 import Learn from "./pages/Learn";
+import Article from "./pages/Article";
 import Alerts from "./pages/Alerts";
 import Portfolio from "./pages/Portfolio";
 
@@ -44,6 +45,7 @@ const App = () => (
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/disclaimer" element={<Disclaimer />} />
               <Route path="/learn" element={<Learn />} />
+              <Route path="/learn/:id" element={<Article />} />
               <Route path="/alerts" element={<Alerts />} />
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="*" element={<NotFound />} />
