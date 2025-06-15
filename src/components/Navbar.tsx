@@ -147,10 +147,10 @@ const Navbar: React.FC = () => {
               </DropdownMenu>
             </>
           ) : (
-            <div className="hidden sm:flex items-center space-x-2">
-              <Button variant="ghost" asChild>
-                <Link to="/auth?mode=login">Sign In</Link>
-              </Button>
+            <div className="hidden sm:flex items-center space-x-4">
+              <Link to="/auth?mode=login" className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors">
+                Sign In
+              </Link>
               <Button asChild>
                 <Link to="/auth?mode=register">Sign Up</Link>
               </Button>
